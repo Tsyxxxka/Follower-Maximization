@@ -1,4 +1,4 @@
-Thanks for your attention. This is the source code of our VLDB submission "Network Resilience Reinforcement via Vertex Anchoring".
+Thanks for your attention. This is the source code of our VLDB submission "Optimizing Network Resilience via Vertex Anchoring".
 
 # Experimental Environment
 
