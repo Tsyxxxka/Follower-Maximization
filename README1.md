@@ -1,5 +1,6 @@
 Thanks for your attention. This is the source code of our VLDB submission "Optimizing Network Resilience via Vertex Anchoring".
 
+
 # Experimental Environment
 
 The experiments are performed on a CentOS Linux serve (Release 7.5.1804) with Quad-Core Intel Xeon CPU (E5-2640 v4 @ 2.20GHz) and 128G memory. All the algorithms are implemented in C++17. The source code is compiled by GCC (10.2.1) under the -O3 optimization.
