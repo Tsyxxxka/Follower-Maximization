@@ -20,7 +20,7 @@ The experiments are conducted on 8 datasets, obtained from SNAP (http://snap.sta
 
 * **AdvGreedy**: Greedily select the best anchor from pruned candidates in each of the $b$ iterations, based on the shell component structure, accelerating by reusing the intermediate results and applying the upper bound technique.
 
-* **Time-dependent Search Framework**: Greedy-based search framework based on a search tree, with effective pruning strategies, aiming to quickly produce a solution and continue to discover better solutions if time permits. It can be extended to use other heuristics by simply modifying the code. 
+* **Time-dependent Search Framework (GreedySearch)**: Greedy-based search framework based on a search tree, with effective pruning strategies, aiming to quickly produce a solution and continue to discover better solutions if time permits. It can be extended to use other heuristics by simply modifying the code. 
 
 
 # Compile
@@ -28,7 +28,7 @@ The experiments are conducted on 8 datasets, obtained from SNAP (http://snap.sta
 ```shell
 cd code
 g++ -o AdvGreedy AdvGreedy.cpp -std=c++17 -O3
-g++ -o search search.cpp -std=c++17 -O3
+g++ -o GreedySearch GreedySearch.cpp -std=c++17 -O3
 ```
 # Run
 
@@ -45,12 +45,12 @@ For AdvGreedy, we run the code by inputing the name of the graph file and the bu
 ```shell
 ./AdvGreedy gowalla 100
 ```
-For the search framework, we run the search code by inputing the graph file name, the budget and the parameter $\lambda$. To redirect the output to a file, we need to use the command nohup, and an example is as follows.
+For GreedySearch, we run the search code by inputing the graph file name, the budget and the parameter $\lambda$. To redirect the output to a file, we need to use the command nohup, and an example is as follows.
 
 ```shell
-nohup ./search gowalla 100 1 > search-gowalla_b=100_l=1 &
+nohup ./GreedySearch gowalla 100 1 > search-gowalla_b=100_l=1 &
 ```
 
 ## Output
 
-The experiment results will be saved in `./results`, e.g., `./results/AdvGreedy-gowalla_b=100`. For AdvGreedy, the chosen best anchor, the resilience gain and the running time will be printed for each iteration. For the search framework, we will print these infomation every time we discover a new solution. 
+The experiment results will be saved in `./results`, e.g., `./results/AdvGreedy-gowalla_b=100`. For AdvGreedy, the chosen best anchor, the resilience gain and the running time will be printed for each iteration. For GreedySearch, we will print these infomation every time we discover a new solution. 
