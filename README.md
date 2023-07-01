@@ -48,7 +48,7 @@ For AdvGreedy, we run the code by inputing the name of the graph file and the bu
 For GreedySearch, we run the search code by inputing the graph file name, the budget and the parameter $\lambda$. To redirect the output to a file, we need to use the command nohup, and an example is as follows.
 
 ```shell
-nohup ./GreedySearch gowalla 100 1 > search-gowalla_b=100_l=1 &
+nohup ./GreedySearch gowalla 100 1 > GreedySearch-gowalla_b=100_l=1 &
 ```
 
 ## Output
