@@ -478,7 +478,7 @@ int main(int argc, char **argv)
     char input[100], output[100];
     int budget = atoi(argv[2]);
     sprintf(input, "../data/%s", argv[1]);
-    sprintf(output, "../result/AdvGAC-%s_b=%d", argv[1], budget);
+    sprintf(output, "../result/AdvGreedy-%s_b=%d", argv[1], budget);
 
     double begin_time = clock();
     ifstream in(input);
