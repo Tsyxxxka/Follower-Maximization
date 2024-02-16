@@ -1,4 +1,4 @@
-Thanks for your attention. This is the source code of our WWW2024 submission "Optimizing Network Resilience via Vertex Anchoring".
+Thanks for your attention. This is the source code of our WWW2024 paper "Optimizing Network Resilience via Vertex Anchoring".
 
 # Experimental Environment
 
